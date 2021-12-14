@@ -1,0 +1,172 @@
+\\ \\ \\
+\item Quais das afirmações abaixo são verdadeiras?
+
+\begin{enumerate}
+	\item A derivada de $f(x, y, z) = xyz$ no ponto $P(1, \, 1, \, 3)$
+	e na direção que vai de $P$ para o ponto $Q$ dado por $Q = (4, \, 4, \, 6)$
+	é $\frac{7}{\sqrt{3}}$
+
+	\solucao
+
+	A derivada de uma função $f(x, y, z)$ na direção do vetor
+	unitário $u$ em um ponto $P$ pode ser encontrada pelo produto
+	escalar do vetor gradiente de $f$ no ponto $P$ com o vetor $u$.
+	Portanto, precisamos encontrar um vetor $u$ com mesma direção de
+	$\overrightarrow{PQ}$.
+
+	$$
+	\vec{u} = \frac{\overrightarrow{PQ}}{\vline \overrightarrow{PQ}\vline}
+	= \frac{(4, \, 4, , 6) - (1, \, 1, \, 3)}{\vline \overrightarrow{PQ}\vline}
+	= \frac{( 3, \, 3, \, 3 )}{\sqrt{3}}
+	= \left( \frac{1}{\sqrt{3}}, \, \frac{1}{\sqrt{3}}, \, \frac{1}{\sqrt{3}} \right)
+	$$
+
+	Em seguida, vamos encontrar o vetor gradiente no ponto $(1, \, 1, \, 3)$:
+
+	$$
+	\nabla f(x, y, z) = \left( f_x, \, f_y, \, f_z\right)
+	= \left( yz, \, xz, \, xy\right)
+	$$
+
+	$$
+	\nabla f(1, 1, 3) = \left( 3, \, 3, \, 1\right)
+	$$
+
+	Desta forma, a derivada direcional é o produto interno dos dois
+	vetores:
+
+	$$
+	D_u f(1, 1, 3) = \nabla f(1, 1, 3) \cdot \vec{u}
+	= \left( 3, \, 3, \, 1\right) \cdot \left( \frac{1}{\sqrt{3}},
+	\, \frac{1}{\sqrt{3}}, \, \frac{1}{\sqrt{3}} \right) = \frac{7}{\sqrt{3}}
+	$$
+	
+	Assim, a letra a está correta.
+	\\ \\
+	\item Suponha que $T(x, y) = x^2 +3y^2$  representa a distribuição
+	de temperatura em uma vesta região plana, sendo $x$ e $y$ dados em centímetros
+	e $T$ em $^\circ C$. Se estivermos no ponto $P = (2, \, 1/2)$ então a direção
+	e sentido de maior crescimento da temperatura a partir deste ponto é representado
+	pelo vetor $\vec{v} = 4 \vec{i} + 3\vec{j}$ e esta taxa de variação máxima da temperatura
+	é de $5^\circ C/m$
+	
+	\solucao
+	
+	A direção e o sentido de maior aumento da temperatura é fornecida pelo vetor gradiente,
+	portanto, basta encontrar e verificar se ele é paralelo a $\vec{v}$. A taxa de variação
+	máxima é basicamente o módulo deste vetor.
+	
+	$$
+	\nabla T(x, y) = \left( T_x, \, T_y\right) =
+	\left( 2x, \, 6y\right)	
+	$$
+	
+	$$
+	\nabla T(2, 1/2) = \left( 4, \, 3\right)
+	$$
+	
+	Assim, como $\nabla T(2, 1/2) = \vec{v}$ a direção e o sentido da maior taxa
+	de aumento de temperatura são representados pelo vetor $\vec{v}$.
+	
+	$$
+	D_v T(2, 1/2) = |\nabla T(2, 1/2)| = \sqrt{4^2 + 3^2} = 5
+	$$
+	
+	Como podemos ver, o módulo do vetor gradiente realmente é igual a 5, portanto
+	esta afirmação está correta.
+	\\ \\
+	\item A derivada da função $f(x, y) = x^2 -3xy +4y^2$ no ponto $P = (1, \, 2)$
+	e na direção e sentido do vetor unitário que faz angulo $\frac{\pi}{6}$ com o eixo
+	$x$ (sentido positivo) é $\frac{13 - 3 \sqrt{3}}{2}$.
+	
+	\solucao
+	
+	Novamente, basta calcular o vetor gradiente e encontrar seu produto escalar
+	com o vetor unitário que nos fornece a direção.
+	
+	Neste caso, a direção foi fornecida como um ângulo, então temos que
+	$u = (\cos \theta, \, \sin \theta) = \left( \frac{1}{2}, \, \frac{\sqrt{3}}{2}\right)$.
+	
+	$$
+	\nabla f(x, y) = \left( f_x, \, f_y\right) =
+	\left( 2x - 3y, \, -3x + 8y\right)	
+	$$
+
+	$$
+	\nabla f(1, 2) = \left( -4, \, 13\right)
+	$$
+	
+	Finalmente, encontrando o valor da derivada:
+	
+	$$
+	D_v f(1, 2) = \nabla T(1, 2) \cdot \vec{u} =
+	(-4, 13) \cdot \left( \frac{1}{2}, \, \frac{\sqrt{3}}{2}\right) =
+	\frac{13\sqrt{3} - 4}{2}
+	$$
+	
+	Dessa forma, o valor da derivada nesta direção não é aquele que foi dito
+	na afirmação, portanto ela está incorreta.
+	\\ \\
+	\item  A derivada da função $f(x, y) = 2500 + 100(x^2 + y^2) e^{-0,3y^3}$ no ponto
+	$P = (-1, \, -1)$ e na direção e sentido do vetor unitário que faz ângulo $\theta = 
+	\frac{\pi}{4}$ com o vetor gradiente neste ponto é $\approx 117$.
+	
+	\solucao
+	
+	Como a derivada direcional é encontrada como um produto interno,
+	podemos enconrtra-lá sabendo apenas o módulo dos vetores e o ângulo entre eles:
+	
+	$$\nabla f(x, y) \cdot \vec{u} = |\nabla f(x, y)||\vec{u}|\cos \theta$$
+	
+	O enunciado diz que $\theta = \frac{\pi}{4}$, portanto $\cos \theta = \frac{\sqrt{2}}{2}$
+	além disso, como $\vec{u}$ deve ser um veotr unitário, seu módulo é $1$. Assim, precisamos
+	encontrar apenas o módulo de $\nabla f(x, y)$.
+	
+	$$
+	\nabla f(x, y) = \left( 100e^{-o,3y^3}, \, 110e^{-o,3y^3} \right)
+	$$
+	
+	$$
+	\nabla f(-1, -1) = \left(100 e^{0,3}, 110e^{-0,3} \right)
+	$$
+	
+	$$
+	| \nabla f(-1, -1) | = \sqrt{\nabla f(-1, -1) \cdot \nabla f(-1, -1)} =
+	\sqrt{10000e^{0,6} + 12100e^{0,6}} = 
+	\sqrt{22100e^{0,6}}
+	$$
+	
+	Finalmente, basta encontrar $Du f(-1, -1)$:
+	
+	$$
+	Du f(-1, -1) = \sqrt{22100e^{0,6}} \cdot 1 \cdot \frac{\sqrt{2}}{2} =
+	\sqrt{\frac{44200e^{0,6}}{4}} = \sqrt{11050e^{0,6}} \approx 142
+	$$
+	
+	Desta forma, a afirmação está incorreta.
+	\\ \\
+	\item Se $f(x, y) = \frac{x^4}{y^2}$ e $P = (2, \, 1)$ então a maior
+	taxa de crescimento desta função a partir deste ponto é $32\sqrt{2}$.
+	
+	\solucao
+	
+	Neste caso, basta encontrar o módulo do vetor gradiente e ver se ele é o
+	mesmo que o fornecido na afirmação.
+	
+	$$
+	\nabla f(x, y) = \left( \frac{4x^3}{y^2}, \, \frac{-2x^4}{y^3}\right)
+	$$
+	
+	$$
+	\nabla f(2, 1) = \left( 32, -32 \right)
+	$$
+	
+	$$
+	|\nabla f(2, 1)| = \sqrt{32^2 + 32^2} = 32\sqrt{2}
+	$$
+	
+	Assim, a afirmação esta correta.
+	\\ \\
+	Desta forma, as únicas afirmações incorretas são as letras c e d.
+
+\end{enumerate}

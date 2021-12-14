@@ -1,0 +1,80 @@
+\item Calcule os autovalores da matriz 
+$A = 
+\begin{vmatrix}
+	2 & -1 &  5 \\
+	0 &  1 &  4 \\
+	0 &  0 & -3
+\end{vmatrix}
+$,
+determine uma base para o auto-espaço
+associado a cada autovalor.
+\\ \\
+\solucao
+$$
+det
+\begin{pmatrix}
+	2 & -1 &  5 \\
+	0 &  1 &  4 \\
+	0 &  0 & -3
+\end{pmatrix}
+= (2 - \lambda)(1 - \lambda)(3+\lambda)
+$$
+\\ \\
+\begin{center}
+	$\lambda_1 = -3$
+	$\lambda_2 =  1$
+	$\lambda_3 =  2$
+\end{center}
+Encontrando os autovetores:
+
+$$
+\begin{pmatrix}
+	5 & -1 &  5 & 0\\
+	0 &  4 &  4 & 0\\
+	0 &  0 & 0 & 0
+\end{pmatrix}
+\begin{array}{cc}
+	5x - y + 5z = 5x + 6z \Rightarrow x = -\dfrac{6z}{5} \\
+	y = -z
+\end{array}
+\, \, \, 
+v_1 = (-6, \, -5, \, 5)
+$$
+$$
+\begin{pmatrix}
+	1 & -1 &  5 & 0\\
+	0 &  0 &  4 & 0\\
+	0 &  0 & -4 & 0
+\end{pmatrix}
+\begin{array}{cc}
+	x = y \\
+	z = 0
+\end{array}
+\, \, \, 
+v_2 = (1, \, 1, \, 0)
+$$
+$$
+\begin{pmatrix}
+	0 & -1 &  5 & 0\\
+	0 & -1 &  4 & 0\\
+	0 &  0 & -5 & 0
+\end{pmatrix}
+\begin{array}{cc}
+	\\
+	y = 0 \\
+	z = 0
+\end{array}
+\, \, \, 
+v_3 = (1, \, 0, \, 0)
+$$
+Portanto, temos os 3 autovalores e autovetores,
+assim podemos escrever as 3 bases dos auto-espaços:
+
+$$
+\begin{array}{ccc}
+	\lambda_1 = -3 & \lambda_2 = 1 &\lambda_3 = 2 \\
+	\mathbb{B}_1 = \{(-6 \, , -6 \, , 5)\} &
+	\mathbb{B}_2 = \{( 1 \, ,  1 \, , 0)\} &
+	\mathbb{B}_3 = \{( 1 \, ,  0 \, , 0)\}
+\end{array}
+$$

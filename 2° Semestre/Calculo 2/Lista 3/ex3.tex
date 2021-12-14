@@ -1,0 +1,31 @@
+\\ \\ \\
+\item Determine $f_{zyx}$, onde $f(x, y, z) = e^{-xyz}$. Desenvolva
+todos os passos para chegar à sua resposta.
+
+\solucao
+Para isso, é preciso derivar $f$ três vezes, cada vez em relação
+a uma das variáveis, independente da ordem.
+
+\begin{itemize}
+	\item Encontrando $f_x$:
+	
+	$$f_x(x, y, z) = -yze^{-xyz}$$
+	
+	\item Encontrando $f_{xy}$:
+	
+	$$f_{xy}(x, y, z) = -z(e^{(-xyz)} - xyze^{(-xyz)}) = -ze^{(-xyz)}(1-xyz)$$
+	
+	$$f_{xy}(x, y, z) = xyz^2e^{(-xyz)} - ze^{-xyz}$$
+
+	\item Encontrando $f_{xyz}$:
+	
+	$$f_{xyz}(x, y, z) = xy(2ze^{(-xyz)} - xyz^2e^{(-xyz)}) - (e^{(-xyz)} - xyze^{(-xyz)})$$
+	
+	$$f_{xyz}(x, y, z) = 2xyze^{(-xyz)} - x^2y^2z^2e^{(-xyz)} - e^{(-xyz)} + xyze^{(-xyz)}$$
+	
+	$$f_{xyz}(x, y, z) = e^{(-xyz)}(3xyz - x^2y^2z^2 - 1)$$	
+\end{itemize}
+
+Assim, como $f_{xyz}(x, y, z) = f_{zyx}(x, y, z)$, temos que:
+
+$$f_{zyx}(x, y, z) = e^{(-xyz)}(3xyz - x^2y^2z^2 - 1)$$	

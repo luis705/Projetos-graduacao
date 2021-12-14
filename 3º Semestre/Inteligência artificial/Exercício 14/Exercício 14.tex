@@ -1,0 +1,31 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[top=2cm, bottom=3cm, right=2cm, left=3cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[portuguese]{babel}
+
+\title{Título aqui}
+\author{Luís Otávio Lopes Amorim- SP3034178}
+
+\newcommand{\solucao}{
+\begin{center}
+\textbf{SOLUÇÃO}
+\end{center}}
+
+\begin{document}
+\maketitle
+\begin{enumerate}
+\item Qual a diferença de melhoria de aprendizagem? Q8al o impacto na complexidade computacional?
+
+\solucao
+
+Utilizar uma taxa fixa é o método mais simples e computacionalmente barato, isso pois nenhum cálculo a mais deve ser realizado, apenas aqueles envolvidos no algoritmo de aprendizado, além disso é o menos eficaz pois muitas vezes não sabemos a priori o valor ideal para essa taxa
+
+Utilizar uma taxa diferente para cada peso é uma solução mais interessante pois deixa o aprendizado um pouco mais personalizado, porém esse método é um pouco mais custoso computaxcionalmente, não em questão de processamento, mas em questão de memória, já que precisaremos armazenar uma taxa diferente para cada peso.
+
+O método mais caro computacionalmente, porém mais eficiente é o de utilizar taxas variáveis. Ele se torna mais eficiente pois esse dinamiso permite que o ajuste do peso se adeque ao estado do treinamento, quanto mais próximo do desejado os pesos estão, menos eles vão ser modificados, dessa forma podemos utilizar uma taxa de aprendizado extremamente alta quando a rede está longe do desejado sem que a rede se torne instável. Ainda assim o custo é alto pois além de ajustarmos os pesos agora temos de ajustar a taxa de aprendizado também.
+\end{enumerate}
+\end{document}

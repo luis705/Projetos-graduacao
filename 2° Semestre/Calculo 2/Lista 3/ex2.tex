@@ -1,0 +1,31 @@
+\item Considere as funções $f(x,y) = x \cdot e^{x^2 - y^2}$
+e $g(x, y) = \ln{\frac{1}{\sqrt{x^2+y^2}}}$. Sobre estas
+funções, marque a alternativa ou alternativas que contenham
+duas afirmações verdadeiras.
+
+\begin{enumerate}
+	\item $f_y(x, y) = -2y \cdot e^{x^2-y^2}$ e $g_{xy}(x, y) + g_{yx}(x,y) = 0 $
+	\item $f_{yx}(x, y) = -2y \cdot (1+2x^2) \cdot e^{x^2-y^2}$ e $g_{xx}(x, y) + g_{yy}(x,y) = 0 $
+	\item $f_x(x, y) = (1+2x^2) \cdot e^{x^2-y^2}$ e $g_{xx}(x, y) - g_{yy}(x,y) = 0 $
+	\item $f_y(x, y) = -2xy \cdot e^{x^2 - y^2}$ e $g_{xy}(x, y) - g_{yx}(x,y) = 0 $
+	\item $f_{xy}(x, y) = -2y \cdot (1+2x^2) \cdot e^{x^2-y^2}$ e $g_{xx}(x, y) + g_{yy}(x,y) = 0 $
+\end{enumerate}
+
+Calculando cada uma das derivadas parciais obtivemos:
+		
+\solucao
+\begin{center}
+$
+\begin{array}{ccc}
+	\dfrac{\partial f}{\partial y} = x \cdot e^{(x^2 - y^2)} &
+	\dfrac{\partial f}{\partial x} = e^{(x^2-y^2)}(1+2x^2) &
+	\dfrac{\partial^2 f}{\partial y \partial x} = -2y(1+2x^2)e^{(x^2-y^2)} \\ \\
+	\dfrac{\partial^2 g}{\partial x^2} = \dfrac{x^2 - y^2}{(x^2+y^2)^2} &
+	\dfrac{\partial^2 g}{\partial y^2} = \dfrac{y^2 - x^2}{(x^2+y^2)^2} &
+	\dfrac{\partial^2 g}{\partial x \partial y} = \dfrac{2xy}{(x^2+y^2)^2}
+\end{array}
+$
+\end{center}
+
+Com isso, analisando as alternativas, apenas as letras
+$b$, $d$ e $e$ apresentam duas afirmações corretas.

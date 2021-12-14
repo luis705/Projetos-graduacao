@@ -1,0 +1,106 @@
+\\ \\ \\
+\item Seja $w = f(x, y)$, onde f é uma função diferenciavel.
+Se $x = r \cos \theta$ e $y = r \sen \theta$, quais das
+afirmações abaixo são verdadeiras (pode haver mais de uma)?
+
+Sugestão: neste exercício você deve usar a regra da cadeia.
+
+\begin{enumerate}
+	\item $\left(\dfrac{\partial w}{\partial r}\right)^2 +
+			\left(\dfrac{\partial w}{\partial \theta}\right)^2
+			= \left(\dfrac{\partial w}{\partial x}\right)^2 + \dfrac{1}{r^2} \cdot
+			\left(\dfrac{\partial w}{\partial y}\right)^2$
+	
+	\item $\left(\dfrac{\partial w}{\partial x}\right)^2 -
+			\left(\dfrac{\partial w}{\partial y}\right)^2
+			= \left(\dfrac{\partial w}{\partial r}\right)^2 - \dfrac{1}{r^2} \cdot
+			\left(\dfrac{\partial w}{\partial \theta}\right)^2$
+			
+	\item $\left(\dfrac{\partial w}{\partial r}\right)^2 +
+			\left(\dfrac{\partial w}{\partial \theta}\right)^2
+			= \left(\dfrac{\partial w}{\partial x}\right)^2 + r^2 \cdot
+			\left(\dfrac{\partial w}{\partial y}\right)^2$
+			
+	\item $\left(\dfrac{\partial w}{\partial x}\right)^2 +
+			\left(\dfrac{\partial w}{\partial y}\right)^2
+			= \left(\dfrac{\partial w}{\partial r}\right)^2 + \dfrac{1}{r^2} \cdot
+			\left(\dfrac{\partial w}{\partial \theta}\right)^2$
+	
+	\item $\left(\dfrac{\partial w}{\partial r}\right)^2 +
+			\left(\dfrac{\partial w}{\partial y}\right)^2
+			= \left(\dfrac{\partial w}{\partial x}\right)^2 + \dfrac{1}{r^2} \cdot
+			\left(\dfrac{\partial w}{\partial \theta}\right)^2$
+\end{enumerate}
+
+\solucao
+
+Inicialmente calculamos as derivadas parciais de
+$w$ em relação a $r$ e $\theta$.
+
+\begin{center}
+$$
+\begin{array}{c}
+	\dfrac{\partial w}{\partial r} =
+	\dfrac{\partial w}{\partial x} \cos \theta +
+	\dfrac{\partial w}{\partial y} \sen \theta \\ \\
+	\dfrac{\partial w}{\partial \theta} =
+	-\dfrac{\partial w}{\partial x} r \sen \theta +
+	\dfrac{\partial w}{\partial y} r \cos \theta
+\end{array}
+$$
+\end{center}
+
+Em seguida, elevamos ambas as derivadas ao quadrado obtendo:
+
+\begin{center}
+$$
+\begin{array}{c}
+	\left(\dfrac{\partial w}{\partial r}\right)^2 =
+	\left(\dfrac{\partial w}{\partial x}\right)^2 \cos ^2 \theta +
+	\left(\dfrac{\partial w}{\partial y}\right)^2 \sen ^2 \theta +
+	2 \dfrac{\partial w}{\partial x} \dfrac{\partial w}{\partial y}
+	\cos \theta \sen \theta \\ \\
+	\left(\dfrac{\partial w}{\partial \theta}\right)^2 =
+	\left(\dfrac{\partial w}{\partial x}\right) r^2 \sen ^2 \theta +
+	\left(\dfrac{\partial w}{\partial y}\right) r^2 \cos ^2 \theta - 
+	2r^2 \dfrac{\partial w}{\partial x} \dfrac{\partial w}{\partial y}
+	\cos \theta \sen \theta
+\end{array}
+$$
+\end{center}
+
+Observando as alternativas, podemos perceber que se resumem
+a 3 somas: $f_r^2+f_{\theta}^2$, $f_r^2+\dfrac{1}{r^2}f_{\theta}^2$ e
+$f_r^2-\dfrac{1}{r^2}f_{\theta}^2$, realizando elas, chegamos aos resultados:
+
+$$
+\left( \dfrac{\partial w}{\partial r}\right)^2 +
+\left( \dfrac{\partial w}{\partial \theta}\right)^2 = 
+\left( \dfrac{\partial w}{\partial x}\right)^2
+(\cos \theta + r^2 \sen \theta) +
+\left( \dfrac{\partial w}{\partial y}\right)^2
+(\sen \theta + r^2 \cos \theta) +
+2r\dfrac{\partial w}{\partial x} \dfrac{\partial w}{\partial y}
+\sen \theta \cos \theta (1 - r^2)
+$$ 
+
+$$
+\left( \dfrac{\partial w}{\partial r}\right)^2 +
+\dfrac{1}{r^2}\left( \dfrac{\partial w}{\partial \theta}\right)^2 =
+\left( \dfrac{\partial w}{\partial x}\right)^2 +
+\left( \dfrac{\partial w}{\partial y}\right)^2
+$$
+
+$$
+\left( \dfrac{\partial w}{\partial r}\right)^2 -
+\dfrac{1}{r^2}\left( \dfrac{\partial w}{\partial \theta}\right)^2 =
+\left( \dfrac{\partial w}{\partial x}\right)^2
+\cos (2\theta) -
+\left( \dfrac{\partial w}{\partial y}\right)^2
+\cos (2\theta) +
+4\dfrac{\partial w}{\partial x} \dfrac{\partial w}{\partial y}
+\sen \theta \cos \theta
+\
+$$
+
+Desta forma, a única alternativa correta é a letra d.
